@@ -38,9 +38,6 @@ public:
     void stateChangeFeedback(
         const GoalHandle::SharedPtr goalHandle, const std::shared_ptr<const Action::Feedback> feedback)
     {
-        RCLCPP_INFO_STREAM(get_logger(), "Before deadlock");
-        goalHandle->get_status();
-        RCLCPP_INFO_STREAM(get_logger(), "Not DEAD !");
     }
 
 
