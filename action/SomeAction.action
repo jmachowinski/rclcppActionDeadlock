@@ -1,0 +1,12 @@
+# Goal
+bool force_control
+string name_of_calling_node
+string[] controlled_nodes
+---
+# Result
+bool was_forced_off
+---
+# Feedback
+#dummy value, used by the client to check if the server still lives
+bool still_alive
+
