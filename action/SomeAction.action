@@ -1,5 +1,5 @@
 # Goal
-bool force_control
+uint16 id
 string name_of_calling_node
 string[] controlled_nodes
 ---
