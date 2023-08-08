@@ -64,6 +64,7 @@ public:
 
     void dropHandle()
     {
+        std::lock_guard<std::mutex> lk(interfaceMutex);
         pathRequest = std::future<GoalHandle::SharedPtr>{};
         execHandle.reset();
     }
